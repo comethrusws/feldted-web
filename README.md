@@ -21,7 +21,7 @@
 ## Usage 🚀
 
 To start the development server and launch the website locally, run:
-<br> npm run serve
+<br> `npm run serve`
 <br>
 Then, open your web browser and navigate to `http://localhost:8080` to view the FELDTED HQ website.
 
