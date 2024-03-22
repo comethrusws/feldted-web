@@ -171,7 +171,6 @@
 .btn {
   align-items: center;
   margin-top: 2rem;
-  margin-bottom: 5rem;
   display: inline-block;
   padding: 10px 20px;
   background-color: #000000;
