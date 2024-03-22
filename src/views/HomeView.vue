@@ -1,13 +1,12 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <router-link to="/demodrop">demodrop</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeView',
-}
-
+  name: "HomeView",
+};
 </script>
