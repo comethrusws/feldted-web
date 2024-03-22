@@ -8,5 +8,13 @@
 <script>
 export default {
   name: "HomeView",
+  data() {
+    return {
+      pageTitle: "Latest Releases - FELDTED HQ",
+    };
+  },
+  mounted() {
+    document.title = this.pageTitle;
+  },
 };
 </script>
