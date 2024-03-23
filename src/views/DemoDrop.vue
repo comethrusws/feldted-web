@@ -1,51 +1,52 @@
 <template>
-<div>
-  <body class="black">
-    <NavBar/>
-    <div class="grid">
-      <div class="gridcell">
-        <header class="mast">
-          <h1>DEMO DROP</h1>
-          <p>
-            Send in your original demo tracks for review. We're not accepting remixes or bootlegs.
-          </p>
-        </header>
-        <div class="pane-container">
-          <div class="pane">
-            <h3>Connect</h3>
+  <div>
+    <body class="black">
+      <NavBar />
+      <div class="grid">
+        <div class="gridcell">
+          <header class="mast">
+            <h1>DEMO DROP</h1>
             <p>
-              We review demos submitted to us via SoundCloud.
-              <br>
-              Don't Use SoundCloud yet?
-              <a href="https://soundcloud.com" target="_blank">Create One</a>
+              Send in your original demo tracks for review. We're not accepting remixes or
+              bootlegs.
             </p>
-            <div class="panehelp">
-              <label class="custom-checkbox">
-                <input type="checkbox" />
-                <span class="checkmark">
-                  <div class="checkmark-stem"></div>
-                  <div class="checkmark-kick"></div>
-                </span>
-                <p>
-                  By connecting, you agree to our
-                  <a href="/terms-of-use">Terms of Use</a> and our
-                  <a href="/privacy-policy">Privacy & Cookie Policy</a>
-                </p>
-              </label>
+          </header>
+          <div class="pane-container">
+            <div class="pane">
+              <h3>Connect</h3>
+              <p>
+                We review demos submitted to us via Google Drive.
+                <br />
+                Don't Use Drive yet?
+                <a href="https://drive.google.com" target="_blank">Create One</a>
+              </p>
+              <div class="panehelp">
+                <label class="custom-checkbox">
+                  <input type="checkbox" required />
+                  <span class="checkmark">
+                    <div class="checkmark-stem"></div>
+                    <div class="checkmark-kick"></div>
+                  </span>
+                  <p>
+                    * By connecting, you agree to our
+                    <a href="/terms-of-use">Terms of Use</a> and our
+                    <a href="/privacy-policy">Privacy & Cookie Policy</a>
+                  </p>
+                </label>
+              </div>
+              <SubmitBut />
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <FooterBar/>
+      <FooterBar />
     </body>
-    
-</div>
+  </div>
 </template>
 
 <style scoped>
 body.black {
-  background-image: url('/src/images/noise-black.jpg');
+  background-image: url("/src/images/noise-black.jpg");
   display: block;
   width: 100vw;
   height: auto;
@@ -61,7 +62,7 @@ body.black {
   font-size: 0;
   text-align: center;
 }
-.gridcell{
+.gridcell {
   display: inline-block;
   width: 100%;
   padding: 0 0 0 2rem;
@@ -74,10 +75,12 @@ body.black {
   margin: 2rem 0 4rem;
   text-align: center;
 }
-.mast h1, .mast p, .pane {
+.mast h1,
+.mast p,
+.pane {
   color: #fff;
 }
-p{
+p {
   margin-top: 1rem;
 }
 .pane-container {
@@ -87,23 +90,23 @@ p{
   margin: 2rem 0;
   padding: 4rem;
   border-radius: 3px;
-  background-color: rgba(255,255,255,.05);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .pane h3 {
   font-weight: 700;
   margin-bottom: 1em;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255,255,255,.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   text-transform: uppercase;
 }
-.pane p{
+.pane p {
   font-size: 1.15rem;
 }
-.pane a{
-  color: rgba(255,255,255,.75);
+.pane a {
+  color: rgba(255, 255, 255, 0.75);
 }
 .panehelp {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-top: 4rem !important;
 }
 
@@ -167,18 +170,17 @@ p{
   transform: rotate(45deg);
 }
 
-.panehelp p{
-  font-size: .8rem;
+.panehelp p {
+  font-size: 0.8rem;
   color: #fff;
   font-weight: 200;
   text-transform: uppercase;
 }
-.panehelp a{
-  color: rgba(255,255,255,.75);
+.panehelp a {
+  color: rgba(255, 255, 255, 0.75);
 }
 
-
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .checkmark {
     position: absolute;
     top: 0;
@@ -188,27 +190,28 @@ p{
     background-color: #eee;
     border-radius: 4px;
   }
-  
 }
-
 </style>
 
 <script>
-import NavBar from '@/components/NavBar.vue'
-import FooterBar from '@/components/FooterBar.vue'
+import NavBar from "@/components/NavBar.vue";
+import FooterBar from "@/components/FooterBar.vue";
+import SubmitBut from "@/components/SubmitBut.vue";
 
 export default {
-    name: 'DemoDrop',
-    components:{
-      NavBar, FooterBar,
-    },
-    data() {
+  name: "DemoDrop",
+  components: {
+    NavBar,
+    FooterBar,
+    SubmitBut,
+  },
+  data() {
     return {
-      pageTitle: 'Demo FELDTED HQ'
+      pageTitle: "Demo FELDTED HQ",
     };
   },
   mounted() {
     document.title = this.pageTitle;
-  }
-}
+  },
+};
 </script>

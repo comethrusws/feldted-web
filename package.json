@@ -16,7 +16,10 @@
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/js": "^7.4.47",
     "core-js": "^3.8.3",
+    "dropbox": "^10.34.0",
+    "googleapis": "^134.0.0",
     "soundcloud": "^3.3.2",
+    "url": "^0.11.3",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
