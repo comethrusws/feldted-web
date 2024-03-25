@@ -1,7 +1,7 @@
 <template>
   <button class="btn">
     <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSd1geNa3Pvm5Rd2DwHV3WNOuD5ymJXBDwkHyoCXDG3pf6Kmfw/viewform?usp=sharing"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeR8TM4GWQa9pZKJVXNvaSGvsvQYRhTsqn8bRf4MnOkW2kUnQ/viewform?usp=sharing"
       class="bt"
       target="_blank"
       >Proceed to Submission</a
