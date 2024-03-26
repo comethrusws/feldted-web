@@ -4,7 +4,7 @@
       <p class="follow-us-text">Follow Us On</p>
       &nbsp;
       <a href="https://instagram.com/feldtedhq" class="social-icon"
-        ><svg-icon style="height: 16px" type="mdi" :path="path"></svg-icon>
+        ><svg-icon style="height: 14px" type="mdi" :path="path"></svg-icon>
       </a>
       <a href="#" class="social-icon"
         ><svg-icon style="height: 16px" type="mdi" :path="path1"></svg-icon>
@@ -23,11 +23,17 @@
 @media (max-width: 800px) {
   .follow-us {
     text-align: center;
-    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .follow-us {
+    text-align: center;
   }
 
   .follow-us-text {
     margin-bottom: 0px;
+    margin-left: 3rem;
     font-size: 16px;
     margin-top: 0;
     color: rgba(211, 211, 211, 0.822);
@@ -46,7 +52,6 @@
 
 .follow-us {
   text-align: center;
-  margin-right: 3rem;
 }
 
 .follow-us-text {

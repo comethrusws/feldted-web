@@ -33,6 +33,7 @@
                     style="width: 200px"
                   />
                 </figure>
+
                 <div class="release__info">
                   <div class="release__info__date">2020</div>
                   <h3 class="release__info__h3">
@@ -42,6 +43,24 @@
                   </h3>
                 </div>
               </div>
+              <div class="grid__cell -width">
+                <figure class="relase__figure">
+                  <img
+                    src="../images/Past Releases/Want Me (006).jpg"
+                    alt="Cover RNDM - WANT ME"
+                    style="width: 200px"
+                  />
+                </figure>
+                <div class="release__info">
+                  <div class="release__info__date">202o</div>
+                  <h3 class="release__info__h3">
+                    RNDM
+                    <br />
+                    WANT ME
+                  </h3>
+                </div>
+              </div>
+
               <div class="grid__cell -width">
                 <figure class="relase__figure">
                   <img
